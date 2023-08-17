@@ -34,30 +34,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/array-from-iterator
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var iterator2array = require( '@stdlib/array-from-iterator' );
+import iterator2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-from-iterator@deno/mod.js';
 ```
 
 #### iterator2array( iterator\[, out]\[, mapFcn\[, thisArg]] )
@@ -65,7 +49,7 @@ var iterator2array = require( '@stdlib/array-from-iterator' );
 Creates (or fills) an array from an `iterator`.
 
 ```javascript
-var randu = require( '@stdlib/random-iter-randu' );
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@deno/mod.js';
 
 var opts = {
     'iter': 10
@@ -78,8 +62,8 @@ var arr = iterator2array( randu( opts ) );
 By default, the function creates and fills a generic `array`. To fill an array-like `object`, provide an `out` argument.
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
-var randu = require( '@stdlib/random-iter-randu' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@deno/mod.js';
 
 var out = new Float64Array( 10 );
 
@@ -93,7 +77,7 @@ var bool = ( out === arr );
 To invoke a function for each iterated value, provide a callback function.
 
 ```javascript
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
 
 function fcn( v ) {
     return v * 10.0;
@@ -109,8 +93,8 @@ The invoked function is provided two arguments:
 -   `index`: iterated value index
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
-var randu = require( '@stdlib/random-iter-randu' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@deno/mod.js';
 
 function fcn( v, i ) {
     return v * (i+1);
@@ -123,8 +107,8 @@ var arr = iterator2array( randu(), new Float64Array( 10 ), fcn );
 To set the callback function execution context, provide a `thisArg`.
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
-var randu = require( '@stdlib/random-iter-randu' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@deno/mod.js';
 
 function fcn( v ) {
     this.count += 1;
@@ -169,9 +153,9 @@ var count = ctx.count;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
-var randu = require( '@stdlib/random-iter-randu' );
-var iterator2array = require( '@stdlib/array-from-iterator' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@deno/mod.js';
+import iterator2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-from-iterator@deno/mod.js';
 
 var opts;
 var arr;
@@ -232,7 +216,7 @@ for ( i = 0; i < arr.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -294,9 +278,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/array/to-iterator]: https://github.com/stdlib-js/array-to-iterator
+[@stdlib/array/to-iterator]: https://github.com/stdlib-js/array-to-iterator/tree/deno
 
-[@stdlib/iter/to-array-view]: https://github.com/stdlib-js/iter-to-array-view
+[@stdlib/iter/to-array-view]: https://github.com/stdlib-js/iter-to-array-view/tree/deno
 
 <!-- </related-links> -->
 

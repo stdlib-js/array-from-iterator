@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import iterator2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-from-iterator@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-from-iterator/tags). For example,
+
+```javascript
 import iterator2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-from-iterator@v0.1.0-esm/index.mjs';
 ```
 
@@ -171,7 +176,7 @@ var count = ctx.count;
 
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
-import iterator2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-from-iterator@v0.1.0-esm/index.mjs';
+import iterator2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-from-iterator@esm/index.mjs';
 
 var opts;
 var arr;

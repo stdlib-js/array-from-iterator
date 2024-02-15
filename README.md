@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterator2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-from-iterator@esm/index.mjs';
+import iterator2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-from-iterator@v0.2.0-esm/index.mjs';
 ```
 
 #### iterator2array( iterator\[, out]\[, mapFcn\[, thisArg]] )
@@ -171,7 +171,7 @@ var count = ctx.count;
 
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
-import iterator2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-from-iterator@esm/index.mjs';
+import iterator2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-from-iterator@v0.2.0-esm/index.mjs';
 
 var opts;
 var arr;
